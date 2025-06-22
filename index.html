@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VidyaRupi Internship - For 1st-Year College Students</title>
+    <title>VidyaRupi Internship - For College Students</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -250,19 +250,201 @@
             box-shadow: 0 6px 24px rgba(99,102,241,0.18);
             text-decoration: none;
         }
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.1em;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .contact-icon-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(120deg, #e0c3fc 60%, #6366f1 100%);
+            color: #fff;
+            font-size: 1.5em;
+            box-shadow: 0 2px 8px rgba(99,102,241,0.13);
+            border: none;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+        }
+        .contact-icon-btn:hover {
+            background: linear-gradient(120deg, #6366f1 60%, #e0c3fc 100%);
+            color: #fff;
+            transform: scale(1.12);
+            box-shadow: 0 4px 16px rgba(99,102,241,0.18);
+        }
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
+            margin: 1.2em 0 0.5em 0;
+            align-items: flex-start;
+        }
+        .step {
+            background: linear-gradient(90deg, #e0c3fc 60%, #f8fafc 100%);
+            border-radius: 8px;
+            padding: 0.7em 1.2em;
+            font-size: 1.08em;
+            font-weight: 500;
+            color: #4f46e5;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(99,102,241,0.07);
+        }
+        .step-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2em;
+            height: 2em;
+            background: #7c3aed;
+            color: #fff;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 1em;
+            font-size: 1.1em;
+        }
+        .icon-img {
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            object-fit: cover;
+            display: block;
+        }
+        .apply-banner {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -2.5em;
+            margin-bottom: 2.5em;
+        }
+        .apply-banner-content {
+            background: linear-gradient(90deg, #e0c3fc 60%, #6366f1 100%);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(99,102,241,0.13);
+            padding: 2em 2.5em 1.5em 2.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 420px;
+            width: 100%;
+        }
+        .apply-banner-text {
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #4f46e5;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .apply-banner-content {
+                padding: 1.2em 0.5em 1em 0.5em;
+                max-width: 98vw;
+            }
+        }
+        .apply-gradient-section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(120deg, #f8fafc 60%, #e0c3fc 100%);
+            border-radius: 2em;
+            box-shadow: 0 8px 32px 0 rgba(99,102,241,0.10);
+            margin-top: -2.2em;
+            margin-bottom: 2.5em;
+            padding: 2.5em 0 2.5em 0;
+        }
+        .apply-gradient-btn {
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 700;
+            padding: 1em 3em;
+            border-radius: 1em;
+            box-shadow: 0 4px 24px rgba(99,102,241,0.18);
+            border: none;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            display: inline-block;
+        }
+        .apply-gradient-btn:hover {
+            background: linear-gradient(90deg, #8b5cf6, #6366f1);
+            transform: scale(1.05);
+            box-shadow: 0 8px 32px rgba(99,102,241,0.25);
+        }
+        @media (max-width: 600px) {
+            .apply-gradient-section {
+                padding: 1.2em 0 1.2em 0;
+                border-radius: 1em;
+            }
+            .apply-gradient-btn {
+                font-size: 1.1em;
+                padding: 0.7em 1.2em;
+            }
+        }
+        .apply-float-wrapper {
+            position: absolute;
+            left: 50%;
+            bottom: -2.2em;
+            transform: translateX(-50%);
+            z-index: 10;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            pointer-events: none;
+        }
+        .apply-float-btn {
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 700;
+            padding: 1em 3em;
+            border-radius: 1em;
+            box-shadow: 0 8px 32px rgba(99,102,241,0.25);
+            border: none;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            display: inline-block;
+            pointer-events: auto;
+        }
+        .apply-float-btn:hover {
+            background: linear-gradient(90deg, #8b5cf6, #6366f1);
+            transform: scale(1.05);
+            box-shadow: 0 12px 36px rgba(99,102,241,0.32);
+        }
+        @media (max-width: 600px) {
+            .apply-float-btn {
+                font-size: 1.1em;
+                padding: 0.7em 1.2em;
+            }
+            .apply-float-wrapper {
+                bottom: -1.2em;
+            }
+        }
     </style>
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" style="position:relative;">
         <h1>🌟 VidyaRupi Internship</h1>
-        <p>For 1st-Year College Students</p>
+        <p>For College Students</p>
         <p>📚 Explore. Learn. Grow.</p>
+        <div class="apply-float-wrapper">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg2HlTUz85AfyOq8nx2vMAq8fJOn6oaUkxQhIosfAxtsLEzw/viewform?usp=dialog" class="apply-float-btn" target="_blank">Apply Now</a>
+        </div>
     </header>
     <div class="container">
         <section class="section">
             <h2>👋 Welcome to VidyaRupi!</h2>
-            <p>Are you a 1st-year student eager to explore real-world skills and discover what excites you?</p>
-            <p>Join our fun, beginner-friendly online internship, where you'll get a taste of different career paths — all with guidance, hands-on tasks, and flexible timing.</p>
+            <p>Are you a college student eager to explore real-world skills and discover what excites you?</p>
+            <p>Join our fun, beginner-friendly online internship, where you'll get a taste of different career paths — all with guidance, hands-on tasks, and flexible timing. Open to students from any year or background!</p>
         </section>
         <section class="section">
             <h2>🎯 Internship Objective</h2>
@@ -274,39 +456,67 @@
                 <div class="track-card">
                     <span class="icon">🌐</span>
                     <h3>Web Basics</h3>
-                    <p>Build your first personal website using HTML & CSS</p>
+                    <p>Frontend – Build Your First Website</p>
+                </div>
+                <div class="track-card">
+                    <span class="icon">📱</span>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma – App/Mobile Screens</p>
                 </div>
                 <div class="track-card">
                     <span class="icon">🎨</span>
-                    <h3>UI/UX Design</h3>
-                    <p>Design mobile app screens using Figma and learn user-centered thinking</p>
+                    <h3>Graphic Design</h3>
+                    <p>Posters, Canva, Personal Branding</p>
                 </div>
                 <div class="track-card">
-                    <span class="icon">💻</span>
+                    <span class="icon">🎬</span>
+                    <h3>Content Creation & Reels</h3>
+                    <p>Video Editing + Presentation Skills</p>
+                </div>
+                <div class="track-card">
+                    <span class="icon">🧩</span>
                     <h3>Vibe Coding</h3>
-                    <p>Dive into coding with fun, creative challenges using logic games, puzzles, and mini projects</p>
+                    <p>Fun Logic Puzzles + Pattern Problems</p>
+                </div>
+                <div class="track-card">
+                    <span class="icon">🐍</span>
+                    <h3>Beginner Python</h3>
+                    <p>With Real-Life Mini Projects</p>
+                </div>
+                <div class="track-card">
+                    <span class="icon">📊</span>
+                    <h3>Excel for Beginners</h3>
+                    <p>Data Entry + Charts + Formulas</p>
+                </div>
+                <div class="track-card">
+                    <span class="icon">📈</span>
+                    <h3>Python for Data Science</h3>
+                    <p>Pandas, Plotting, Analysis</p>
+                </div>
+                <div class="track-card">
+                    <span class="icon">🤖</span>
+                    <h3>Intro to Machine Learning</h3>
+                    <p>Sklearn + Mini Models</p>
+                </div>
+                <div class="track-card">
+                    <span class="icon">📉</span>
+                    <h3>Data Visualization</h3>
+                    <p>using Power BI / Tableau</p>
                 </div>
             </div>
         </section>
         <section class="section">
             <h2>⏳ Internship Format & Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Week 1</h3>
-                    <p>Choose your track & explore the basics</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Week 2</h3>
-                    <p>Complete guided mini-tasks</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Week 3</h3>
-                    <p>Build a simple final project</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Week 4</h3>
-                    <p>Submit, get feedback & reflect</p>
-                </div>
+            <p style="font-weight:600; color:#4f46e5; margin-bottom:1.2em;">This is a 45–60 day internship program.</p>
+            <div class="steps">
+                <div class="step"><span class="step-num">1</span> Fill the form</div>
+                <div class="step"><span class="step-num">2</span> Pay the fees</div>
+                <div class="step"><span class="step-num">3</span> Get letter of selection</div>
+                <div class="step"><span class="step-num">4</span> Get project details</div>
+                <div class="step"><span class="step-num">5</span> Clear your doubts about your project</div>
+                <div class="step"><span class="step-num">6</span> Submit your project</div>
+                <div class="step"><span class="step-num">7</span> Get your government-verified certificate</div>
+                <div class="step"><span class="step-num">🏆</span> If your project is ranked, get your acknowledgement</div>
             </div>
         </section>
         <section class="section">
@@ -315,7 +525,7 @@
                 <div class="benefit-item"><span class="icon">🎓</span> Real Internship Experience</div>
                 <div class="benefit-item"><span class="icon">🤝</span> Friendly Mentorship & Support</div>
                 <div class="benefit-item"><span class="icon">🛠️</span> Build Your Own Mini Project</div>
-                <div class="benefit-item"><span class="icon">📜</span> Certificate of Completion (₹49 only)</div>
+                <div class="benefit-item"><span class="icon">📜</span> Certificate of Completion (₹298 including GST)</div>
             </div>
         </section>
         <section class="section">
@@ -323,22 +533,24 @@
             <ul>
                 <li>Letter of Recommendation</li>
                 <li>Social Media Recognition</li>
-                <li>Rewards from Prize Pool 💰</li>
+                <li>Rewards from ₹1500 Prize Pool 💰</li>
             </ul>
         </section>
         <section class="section contact">
             <h2>📞 Have Questions? We're Here to Help!</h2>
-            <a class="website-link" href="https://vidyarupiedtech.netlify.app/" target="_blank">🌐 Visit Our Website</a>
-            <p>📱 Phone: <a href="tel:6394208794">6394208794</a></p>
-            <p>📧 Email: <a href="mailto:Vidyarupi.service@gmail.com">Vidyarupi.service@gmail.com</a></p>
-            <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/contact-vidyarupi-2a358836b/" target="_blank">linkedin.com/in/contact-vidyarupi-2a358836b</a></p>
-            <p>📸 Instagram: <a href="https://www.instagram.com/vidyarupi/" target="_blank">@vidyarupi</a></p>
+            <div class="contact-icons">
+                <a class="contact-icon-btn" href="https://vidyarupiedtech.netlify.app/" target="_blank" title="Website">🌐</a>
+                <a class="contact-icon-btn" href="tel:6394208794" title="Call">📱</a>
+                <a class="contact-icon-btn" href="mailto:Vidyarupi.service@gmail.com" title="Email">✉️</a>
+                <a class="contact-icon-btn" href="https://www.linkedin.com/in/contact-vidyarupi-2a358836b/" target="_blank" title="LinkedIn"><img src="linedin.png" alt="LinkedIn" class="icon-img"></a>
+                <a class="contact-icon-btn" href="https://www.instagram.com/vidyarupi/" target="_blank" title="Instagram"><img src="Insta.png" alt="Instagram" class="icon-img"></a>
+            </div>
         </section>
         <section class="section">
             <h2>💬 A Message from Team VidyaRupi</h2>
             <p>"You don't need to be perfect — just curious. Let this internship be your first step toward discovering what you truly enjoy. We're here to support you all the way!"</p>
-            <a href="https://forms.gle/7m8FruLnpc6KHafZ9" class="cta-button">Apply Now</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg2HlTUz85AfyOq8nx2vMAq8fJOn6oaUkxQhIosfAxtsLEzw/viewform?usp=dialog" class="cta-button" target="_blank">Apply Now</a>
         </section>
     </div>
 </body>
-</html>
+</html> 
