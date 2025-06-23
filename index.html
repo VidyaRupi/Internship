@@ -16,18 +16,32 @@
             font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #22223b;
-            background: linear-gradient(120deg, #f9f9f9 60%, #e0c3fc 100%);
+            background: linear-gradient(120deg, #f9f9f9 60%, #e6eaf7 100%);
         }
         .hero {
-            background: linear-gradient(120deg, rgba(99,102,241,0.95) 60%, rgba(139,92,246,0.85) 100%), url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            background: linear-gradient(120deg, #27348B 60%, #1a1a1a 100%);
             color: #fff;
             text-align: center;
             padding: 4rem 1rem 3rem 1rem;
             position: relative;
-            box-shadow: 0 4px 24px rgba(99,102,241,0.15);
+            box-shadow: 0 4px 24px rgba(39,52,139,0.15);
             border-bottom-left-radius: 40px;
             border-bottom-right-radius: 40px;
             animation: fadeIn 1.2s;
+            margin-bottom: 4.5em;
+        }
+        .hero-logo {
+            width: 220px;
+            max-width: 80vw;
+            margin-bottom: 1.5rem;
+            margin-top: -1.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            filter: drop-shadow(0 4px 32px #27348bcc) drop-shadow(0 0 24px #6a8cff88) drop-shadow(0 0 8px #fff3);
+            opacity: 0.88;
+            mix-blend-mode: lighten;
+            animation: logoDissolve 1.5s ease-in-out 0.2s forwards;
         }
         .hero h1 {
             font-size: 3rem;
@@ -45,17 +59,18 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
+            margin-top: 8em;
         }
         .section {
-            background: white;
+            background: #f7f8fa;
             border-radius: 18px;
             padding: 2.2rem 2rem;
             margin-bottom: 2.2rem;
-            box-shadow: 0 4px 24px rgba(99,102,241,0.07);
+            box-shadow: 0 4px 24px rgba(39,52,139,0.07);
             animation: fadeInUp 1s;
         }
         .section h2 {
-            color: #7c3aed;
+            color: #27348B;
             margin-bottom: 1.2rem;
             font-size: 2rem;
             font-weight: 700;
@@ -70,18 +85,18 @@
             margin: 2rem 0;
         }
         .track-card {
-            background: linear-gradient(120deg, #f8fafc 80%, #e0c3fc 100%);
+            background: linear-gradient(120deg, #f8fafc 80%, #e6eaf7 100%);
             border-radius: 12px;
             padding: 1.7rem 1.2rem;
             border: 1.5px solid #e2e8f0;
-            box-shadow: 0 2px 10px rgba(124,58,237,0.06);
+            box-shadow: 0 2px 10px rgba(39,52,139,0.06);
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
             animation: fadeInUp 1.2s;
         }
         .track-card:hover {
             transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 8px 32px rgba(124,58,237,0.13);
+            box-shadow: 0 8px 32px rgba(39,52,139,0.13);
         }
         .track-card .icon {
             font-size: 2.2rem;
@@ -96,19 +111,19 @@
             margin: 2rem 0 1rem 0;
         }
         .timeline-item {
-            background: linear-gradient(120deg, #e0c3fc 60%, #f8fafc 100%);
+            background: linear-gradient(120deg, #e6eaf7 60%, #f8fafc 100%);
             padding: 1.2rem 1rem;
             border-radius: 12px;
             text-align: center;
             flex: 1 1 180px;
             min-width: 180px;
             margin: 0 0.5rem;
-            box-shadow: 0 2px 10px rgba(124,58,237,0.06);
+            box-shadow: 0 2px 10px rgba(39,52,139,0.06);
             position: relative;
             animation: fadeInUp 1.2s;
         }
         .timeline-item h3 {
-            color: #7c3aed;
+            color: #27348B;
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
@@ -117,7 +132,7 @@
             display: block;
             width: 40px;
             height: 4px;
-            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            background: linear-gradient(90deg, #27348B, #22223b);
             margin: 1rem auto 0 auto;
             border-radius: 2px;
         }
@@ -130,12 +145,12 @@
             gap: 1.2rem;
         }
         .benefit-item {
-            background: linear-gradient(120deg, #f8fafc 80%, #e0c3fc 100%);
+            background: linear-gradient(120deg, #f8fafc 80%, #e6eaf7 100%);
             padding: 1.2rem 1rem;
             border-radius: 12px;
             text-align: center;
             font-size: 1.1rem;
-            box-shadow: 0 2px 10px rgba(124,58,237,0.06);
+            box-shadow: 0 2px 10px rgba(39,52,139,0.06);
             display: flex;
             align-items: center;
             gap: 0.7em;
@@ -146,11 +161,11 @@
             font-size: 1.5rem;
         }
         .contact {
-            background: linear-gradient(120deg, #e0c3fc 60%, #f8fafc 100%);
+            background: linear-gradient(120deg, #e6eaf7 60%, #f8fafc 100%);
             padding: 2rem;
             border-radius: 12px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(124,58,237,0.06);
+            box-shadow: 0 2px 10px rgba(39,52,139,0.06);
             animation: fadeInUp 1.2s;
         }
         .contact a {
@@ -161,9 +176,8 @@
         .contact a:hover {
             text-decoration: underline;
         }
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+        .cta-button, .apply-float-btn, .apply-gradient-btn {
+            background: linear-gradient(90deg, #27348B, #22223b);
             color: white;
             padding: 1.1rem 2.3rem;
             border-radius: 10px;
@@ -171,14 +185,14 @@
             font-weight: bold;
             margin-top: 1.5rem;
             font-size: 1.2rem;
-            box-shadow: 0 4px 24px rgba(99,102,241,0.18);
+            box-shadow: 0 4px 24px rgba(39,52,139,0.18);
             transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
             animation: pulse 2s infinite;
         }
-        .cta-button:hover {
-            background: linear-gradient(90deg, #8b5cf6, #6366f1);
+        .cta-button:hover, .apply-float-btn:hover, .apply-gradient-btn:hover {
+            background: linear-gradient(90deg, #22223b, #27348B);
             transform: scale(1.05);
-            box-shadow: 0 8px 32px rgba(99,102,241,0.25);
+            box-shadow: 0 8px 32px rgba(39,52,139,0.25);
         }
         ul {
             margin-left: 1.5rem;
@@ -224,13 +238,16 @@
             }
         }
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(99,102,241,0.18); }
-            70% { box-shadow: 0 0 0 12px rgba(99,102,241,0.01); }
-            100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.18); }
+            0% { box-shadow: 0 0 0 0 rgba(39,52,139,0.18); }
+            70% { box-shadow: 0 0 0 12px rgba(39,52,139,0.01); }
+            100% { box-shadow: 0 0 0 0 rgba(39,52,139,0.18); }
+        }
+        @keyframes logoDissolve {
+            from { opacity: 0; transform: scale(0.92); }
+            to { opacity: 1; transform: scale(1); }
         }
         .website-link {
-            display: inline-block;
-            background: linear-gradient(90deg, #7c3aed, #6366f1);
+            background: linear-gradient(90deg, #27348B, #22223b);
             color: #fff !important;
             font-weight: 700;
             padding: 0.7em 1.5em;
@@ -238,16 +255,16 @@
             font-size: 1.1rem;
             margin-bottom: 1em;
             margin-top: 0.5em;
-            box-shadow: 0 2px 12px rgba(99,102,241,0.13);
+            box-shadow: 0 2px 12px rgba(39,52,139,0.13);
             text-decoration: none;
             transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
             border: none;
         }
         .website-link:hover {
-            background: linear-gradient(90deg, #6366f1, #7c3aed);
+            background: linear-gradient(90deg, #22223b, #27348B);
             color: #fff;
             transform: scale(1.06);
-            box-shadow: 0 6px 24px rgba(99,102,241,0.18);
+            box-shadow: 0 6px 24px rgba(39,52,139,0.18);
             text-decoration: none;
         }
         .contact-icons {
@@ -258,25 +275,19 @@
             margin-bottom: 0.5em;
         }
         .contact-icon-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: linear-gradient(120deg, #e0c3fc 60%, #6366f1 100%);
+            background: linear-gradient(120deg, #e6eaf7 60%, #27348B 100%);
             color: #fff;
             font-size: 1.5em;
-            box-shadow: 0 2px 8px rgba(99,102,241,0.13);
+            box-shadow: 0 2px 8px rgba(39,52,139,0.13);
             border: none;
             text-decoration: none;
             transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
         }
         .contact-icon-btn:hover {
-            background: linear-gradient(120deg, #6366f1 60%, #e0c3fc 100%);
+            background: linear-gradient(120deg, #27348B 60%, #e6eaf7 100%);
             color: #fff;
             transform: scale(1.12);
-            box-shadow: 0 4px 16px rgba(99,102,241,0.18);
+            box-shadow: 0 4px 16px rgba(39,52,139,0.18);
         }
         .steps {
             display: flex;
@@ -286,15 +297,15 @@
             align-items: flex-start;
         }
         .step {
-            background: linear-gradient(90deg, #e0c3fc 60%, #f8fafc 100%);
+            background: linear-gradient(90deg, #e6eaf7 60%, #f8fafc 100%);
             border-radius: 8px;
             padding: 0.7em 1.2em;
             font-size: 1.08em;
             font-weight: 500;
-            color: #4f46e5;
+            color: #27348B;
             display: flex;
             align-items: center;
-            box-shadow: 0 2px 8px rgba(99,102,241,0.07);
+            box-shadow: 0 2px 8px rgba(39,52,139,0.07);
         }
         .step-num {
             display: inline-flex;
@@ -302,7 +313,7 @@
             justify-content: center;
             width: 2em;
             height: 2em;
-            background: #7c3aed;
+            background: #27348B;
             color: #fff;
             border-radius: 50%;
             font-weight: bold;
@@ -346,6 +357,12 @@
             .apply-banner-content {
                 padding: 1.2em 0.5em 1em 0.5em;
                 max-width: 98vw;
+            }
+            .container {
+                margin-top: 10em;
+            }
+            .hero {
+                margin-bottom: 6em;
             }
         }
         .apply-gradient-section {
@@ -433,6 +450,7 @@
 </head>
 <body>
     <header class="hero" style="position:relative;">
+        <img src="Logo.png" alt="VidyaRupi Logo" class="hero-logo">
         <h1>🌟 VidyaRupi Internship</h1>
         <p>For College Students</p>
         <p>📚 Explore. Learn. Grow.</p>
@@ -548,8 +566,12 @@
         </section>
         <section class="section">
             <h2>💬 A Message from Team VidyaRupi</h2>
+       
             <p>"You don't need to be perfect — just curious. Let this internship be your first step toward discovering what you truly enjoy. We're here to support you all the way!"</p>
+            <br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg2HlTUz85AfyOq8nx2vMAq8fJOn6oaUkxQhIosfAxtsLEzw/viewform?usp=dialog" class="cta-button" target="_blank">Apply Now</a>
+<br><br>
+            <p>🌟 Join us in this journey of discovery and growth! 🌟</p>
         </section>
     </div>
 </body>
